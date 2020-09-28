@@ -17,7 +17,7 @@ def self.create
 end
 
 def self.new_by_name(name)
-  song = self.new 
+  song = self.new
   song.name = name
   song
 end
@@ -42,7 +42,7 @@ def self.alphabetical()
 end
 
 def self.new_from_filename(name)
-  song = self.new 
+  song = self.new
   song.name = (name.split(" - ")[1].chomp(".mp3"))
   song.artist_name = (name.split(" - ")[0])
   @@all << song
