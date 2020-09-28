@@ -15,3 +15,5 @@ def self.create
   @@all << song
   song
 end
+
+end
